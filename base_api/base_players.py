@@ -4,8 +4,7 @@ import sys
 sys.path.append("..")
 from config.url import Url
 
-
-logging.basicConfig(level=logging.INFO, filename='../Players.log',
+logging.basicConfig(level=logging.DEBUG, filename='./Players.log',
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
@@ -15,6 +14,7 @@ class Players:
 
     def __init__(self, env='stg'):
         self.env = env
+
         if env == 'stg' or env == 'pro':
             pass
         else:
@@ -66,15 +66,15 @@ class Players:
 
         data = {
             "captcha": "9999",
-            "captchauuid": "90b70885-535f-4018-8800-e8022cc747d9",
-            "fingerprint": "6eedcdae98a1f29eeab414a9ce79f2be",
+            "captchauuid": "799283eb-a54f-49b8-8fd1-f9d7d09d55ab",
+            "fingerprint": "6d3c71dd5d7c436f33d505c9b94210f4",
             "loginname": username,
             "loginpassword": pwd,
             "portalid": "EC_DESKTOP"
         }
 
         r = self.s.post(url, headers=headers, json=data, verify=False)
-        print(r.json(), r.status_code)
+        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
     # Done, expected 204
@@ -101,7 +101,7 @@ class Players:
                     }
 
         r = self.s.put(url, headers=headers, verify=False)
-        print(r.status_code, r.text)
+        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
     # it's a verify feature about mouse leaving a register's input placeholder
@@ -111,7 +111,8 @@ class Players:
 
         param = {'q': valid_registers_username}
         r = self.s.get(url, params=param, verify=False)
-        print(r.status_code, r.json())
+        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        return r.status_code, r.json()
 
     # Done, Refresh to get the personal profile(or money) (EC's money refresh button)
     def profile(self):
@@ -135,7 +136,8 @@ class Players:
         }
 
         r = self.s.get(url, headers=headers)
-        print(r.json(), r.headers)
+        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        return r.status_code, r.json()
 
     # Done, Generate a random captcha(need to verify post and get both)
     def random(self, method='get'):
@@ -148,8 +150,7 @@ class Players:
             r = self.s.post(url, verify=False)
         else:
             raise ValueError('Please input the right method, like post or get')
-        logging.info(r.json())
-        print(r.json())
+        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
     # Done, get register's setting's info
@@ -174,8 +175,8 @@ class Players:
         }
 
         r = self.s.get(url, headers=headers)
-        print(r.json())
-        return r.json()
+        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        return r.status_code, r.json()
 
     # Done, get bankcard setting's info
     def bank_card_setting(self):
@@ -199,8 +200,8 @@ class Players:
         }
 
         r = self.s.get(url, headers=headers)
-        print(r.json())
-        return r.json()
+        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        return r.status_code, r.json()
 
 
 # if __name__ == '__main__':

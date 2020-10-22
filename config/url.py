@@ -1,5 +1,7 @@
 class Url:
 
+    def __init__(self, site):
+        self.site = site
     stg = 'https://ae-api.stgdevops.site/ae-ecp/api/v1/'
     pro = 'https://api.ae1888.com/ae-ecp/api/v1/'
 
@@ -30,9 +32,6 @@ class Url:
                         'pro': pro + _register_setting}
     bankcard_setting = {'stg': stg + _bankcard_setting,
                         'pro': pro + _bankcard_setting}
-
-    def __init__(self, site):
-        self.site = site
 
     def api_sync(self):
         return self.sync[self.site]
