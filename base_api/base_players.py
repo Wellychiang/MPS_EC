@@ -14,7 +14,6 @@ class Players:
 
     def __init__(self, env='stg'):
         self.env = env
-
         if env == 'stg' or env == 'pro':
             pass
         else:
@@ -74,15 +73,16 @@ class Players:
         }
 
         r = self.s.post(url, headers=headers, json=data, verify=False)
-        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        logging.debug(f'username: {username}\nstatus code: {r.status_code}\nresponse: {r.json()}')
+
         return r.status_code, r.json()
 
     # Done, expected 204
     def logout(self):
         site = Url(self.env)
         url = site.api_logout()
-
         _, login_token = self.login()
+
         headers = {
             'Host': 'ae-api.stgdevops.site',
             'Connection': 'keep-alive',
@@ -101,15 +101,17 @@ class Players:
                     }
 
         r = self.s.put(url, headers=headers, verify=False)
-        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
-        return r.status_code, r.json()
+        logging.debug(f'status code: {r.status_code}')
 
-    # it's a verify feature about mouse leaving a register's input placeholder
-    def lookup(self, valid_registers_username='lily'):
+        return r.status_code
+
+    # it's a verify feature about mouse leaving a register's input placeholder(It will show you all about your input)
+    def lookup(self, valid_registers_username='welly'):
         site = Url(self.env)
         url = site.api_lookup()
 
         param = {'q': valid_registers_username}
+
         r = self.s.get(url, params=param, verify=False)
         logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
@@ -204,10 +206,7 @@ class Players:
         return r.status_code, r.json()
 
 
-# if __name__ == '__main__':
-#
-#     players = Players('stg')
-#     players.login()
+
 
 
 
