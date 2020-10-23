@@ -105,6 +105,7 @@ class Players:
 
         return r.status_code
 
+    # Done,
     # it's a verify feature about mouse leaving a register's input placeholder(It will show you all about your input)
     def lookup(self, valid_registers_username='welly'):
         site = Url(self.env)
@@ -155,7 +156,7 @@ class Players:
         logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
-    # Done, get register's setting's info
+    # Not done yet, get register's setting's info
     def register_setting(self):
         site = Url(self.env)
         url = site.api_register_setting()
@@ -180,7 +181,7 @@ class Players:
         logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
-    # Done, get bankcard setting's info
+    # Not done yet, get bankcard setting's info
     def bank_card_setting(self):
         site = Url(self.env)
         url = site.api_bankcard_setting()
@@ -204,6 +205,51 @@ class Players:
         r = self.s.get(url, headers=headers)
         logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
+
+    def register_isplayerinforready(self, username, pwd):
+        site = Url(self.env)
+        url = site.api_register_isplayerinfoready()
+
+        _, login_token = self.login(username, pwd)
+        headers = {
+                'Host': 'ae-api.stgdevops.site',
+                'Connection': 'keep-alive',
+                'Authorization': login_token['token'],
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                              'Chrome/86.0.4240.111 Safari/537.36',
+                'Accept': '*/*',
+                'Origin': 'https://ae.stgdevops.site',
+                'Sec-Fetch-Site': 'same-site',
+                'Sec-Fetch-Mode': 'cors',
+                'Sec-Fetch-Dest': 'empty',
+                'Referer': 'https://ae.stgdevops.site/',
+                'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7'
+                }
+
+        r = self.s.get(url, headers=headers)
+        return r.status_code, r.json()
+
+    def register(self):
+        site = Url(self.env)
+        url = site.api_register()
+
+        headers={
+            'Host': 'ae-api.stgdevops.site',
+            'Connection': 'keep-alive',
+            'Content-Length': '1051',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/86.0.4240.111 Safari/537.36',
+            'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarytMpyO648AM9fjE8c',
+            'Accept': '*/*',
+            'Origin': 'https://ae.stgdevops.site',
+            'Sec-Fetch-Site': 'same-site',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Dest': 'empty',
+            'Referer': 'https://ae.stgdevops.site/',
+            'Accept-Language': ' zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+        }
+
+
 
 
 

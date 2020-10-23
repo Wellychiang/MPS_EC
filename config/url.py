@@ -15,6 +15,9 @@ class Url:
     _random = 'captchas/random'
     _register_setting = 'register/setting'
     _bankcard_setting = 'bankcard/setting'
+    _register_isplayerinfoready = 'register/isplayerinfoready'
+    _register = 'register'
+    _ext_login = 'ext/login'
 
     sync = {'stg': stg + _sync,
             'pro': pro + _sync}
@@ -32,6 +35,24 @@ class Url:
                         'pro': pro + _register_setting}
     bankcard_setting = {'stg': stg + _bankcard_setting,
                         'pro': pro + _bankcard_setting}
+    register_isplayerinfoready = {'stg': stg + _register_isplayerinfoready,
+                                  'pro': pro + _register_isplayerinfoready}
+    register = {'stg': stg + _register,
+                'pro': pro + _register}
+    ext_login = {'stg': stg + _ext_login,
+                 'pro': pro + _ext_login}
+    # random = {'stg': stg + _random,
+    #           'pro': pro + _random}
+    # random = {'stg': stg + _random,
+    #           'pro': pro + _random}
+    # random = {'stg': stg + _random,
+    #           'pro': pro + _random}
+    # random = {'stg': stg + _random,
+    #           'pro': pro + _random}
+    # random = {'stg': stg + _random,
+    #           'pro': pro + _random}
+    # random = {'stg': stg + _random,
+    #           'pro': pro + _random}
 
     def api_sync(self):
         return self.sync[self.site]
@@ -56,4 +77,13 @@ class Url:
 
     def api_bankcard_setting(self):
         return self.bankcard_setting[self.site]
+
+    def api_register_isplayerinfoready(self):
+        return self.register_isplayerinfoready[self.site]
+
+    def api_register(self):
+        return self.register[self.site]
+
+    def api_ext_login(self):
+        return self.ext_login[self.site]
 
