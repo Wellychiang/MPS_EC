@@ -117,11 +117,11 @@ class Players:
         return r.status_code, r.json()
 
     # Done, Refresh to get the personal profile(or money) (EC's money refresh button)
-    def profile(self):
+    def profile(self, username, pwd):
         site = Url(self.env)
         url = site.api_profile()
 
-        _, login_token = self.login()
+        _, login_token = self.login(username, pwd)
         headers = {
             'Accept': '*/*',
             'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
