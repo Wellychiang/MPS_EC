@@ -3,9 +3,25 @@ import logging
 import sys
 sys.path.append("..")
 from config.url import Url
+from urllib3 import encode_multipart_formdata
 
-logging.basicConfig(level=logging.DEBUG, filename='./Players.log',
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# a = 5
+
+LOG_FILE_PATH = './log/Players.log'
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+# Log to screen
+console_logger = logging.StreamHandler(sys.stdout)
+logger.addHandler(console_logger)
+
+# Log to file
+file_logger = logging.FileHandler(LOG_FILE_PATH)
+file_logger.setFormatter(formatter)
+logger.addHandler(file_logger)
 
 
 class Players:
@@ -73,7 +89,7 @@ class Players:
         }
 
         r = self.s.post(url, headers=headers, json=data, verify=False)
-        logging.debug(f'username: {username}\nstatus code: {r.status_code}\nresponse: {r.json()}')
+        logger.info(f'username: {username}\nstatus code: {r.status_code}\nresponse: {r.json()}')
 
         return r.status_code, r.json()
 
@@ -101,7 +117,7 @@ class Players:
                     }
 
         r = self.s.put(url, headers=headers, verify=False)
-        logging.debug(f'status code: {r.status_code}')
+        logger.info(f'status code: {r.status_code}')
 
         return r.status_code
 
@@ -114,7 +130,7 @@ class Players:
         param = {'q': valid_registers_username}
 
         r = self.s.get(url, params=param, verify=False)
-        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        logger.info(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
     # Done, Refresh to get the personal profile(or money) (EC's money refresh button)
@@ -139,7 +155,7 @@ class Players:
         }
 
         r = self.s.get(url, headers=headers)
-        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        logger.info(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
     # Done, Generate a random captcha(need to verify post and get both)
@@ -153,7 +169,7 @@ class Players:
             r = self.s.post(url, verify=False)
         else:
             raise ValueError('Please input the right method, like post or get')
-        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        logger.info(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
     # Not done yet, get register's setting's info
@@ -178,7 +194,7 @@ class Players:
         }
 
         r = self.s.get(url, headers=headers)
-        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        logger.info(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
     # Not done yet, get bankcard setting's info
@@ -203,9 +219,10 @@ class Players:
         }
 
         r = self.s.get(url, headers=headers)
-        logging.debug(f'status code: {r.status_code}\nresponse: {r.json()}')
+        logger.info(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
+    # Not done yet
     def register_isplayerinforready(self, username, pwd):
         site = Url(self.env)
         url = site.api_register_isplayerinfoready()
@@ -227,13 +244,15 @@ class Players:
                 }
 
         r = self.s.get(url, headers=headers)
+        logger.info(f'status code: {r.status_code}\nresponse: {r.json()}')
         return r.status_code, r.json()
 
-    def register(self):
+    def register(self, user='welly', user_num=5, mobile_num=13131313136, dieli=None):
+
         site = Url(self.env)
         url = site.api_register()
 
-        headers={
+        headers = {
             'Host': 'ae-api.stgdevops.site',
             'Connection': 'keep-alive',
             'Content-Length': '1051',
@@ -246,15 +265,33 @@ class Players:
             'Sec-Fetch-Mode': 'cors',
             'Sec-Fetch-Dest': 'empty',
             'Referer': 'https://ae.stgdevops.site/',
-            'Accept-Language': ' zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+            'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+
         }
 
+        data = {
+            'playerid': (None, f'{user}{str(user_num)}'),
+            'password': (None, 'fec5bf529c1ae70b2618b4d1db82b7135a7d371f'),
+            'currency': (None, 'USD'),
+            'mobile': (None, f'86 {str(mobile_num)}'),
+            'portalid': (None, 'EC_DESKTOP'),
+            'captcha': (None, '6876'),
+            'captchauuid': (None, 'ae1dd0be-cba2-4ccc-a3e8-025911847ecc'),
+            'regfingerprint': (None, '1435639e2a6a9da4eca32a98591390b3'),
+            'language': (None, '2'),
+        }
+
+        if dieli == True:
+            data['affiliateid'] = (None, 'CZHHBM')
+
+        m = encode_multipart_formdata(data, boundary='----WebKitFormBoundarytMpyO648AM9fjE8c')
+
+        r = self.s.post(url, headers=headers, data=m[0], verify=False)
+        logger.info(f'status code: {r.status_code}\nresponse: {r.json()}')
+        return r.status_code, r.json()
 
 
-
-
-
-
-
-
-
+if __name__ == '__main__':
+    players = Players()
+    status, json = players.login()
+    print(status, json)
