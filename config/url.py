@@ -18,6 +18,11 @@ class Url:
     _register_isplayerinfoready = 'register/isplayerinfoready'
     _register = 'register'
     _ext_login = 'ext/login'
+    _reset_password = 'password'
+    _pin = 'pin'
+    _profile_settle = ''
+    _profile_info = 'profile/info'
+    _profile_requiredinfo = ''
 
     sync = {'stg': stg + _sync,
             'pro': pro + _sync}
@@ -41,16 +46,16 @@ class Url:
                 'pro': pro + _register}
     ext_login = {'stg': stg + _ext_login,
                  'pro': pro + _ext_login}
-    # random = {'stg': stg + _random,
-    #           'pro': pro + _random}
-    # random = {'stg': stg + _random,
-    #           'pro': pro + _random}
-    # random = {'stg': stg + _random,
-    #           'pro': pro + _random}
-    # random = {'stg': stg + _random,
-    #           'pro': pro + _random}
-    # random = {'stg': stg + _random,
-    #           'pro': pro + _random}
+    reset_password = {'stg': stg + _reset_password,
+                      'pro': pro + _reset_password}
+    pin = {'stg': stg + _pin,
+           'pro': pro + _pin}
+    profile_settle = {'stg': stg + _profile_settle,
+                      'pro': pro + _profile_settle}
+    profile_info = {'stg': stg + _profile_info,
+                    'pro': pro + _profile_info}
+    profile_requiredinfo = {'stg': stg + _profile_requiredinfo,
+                            'pro': pro + _profile_requiredinfo}
     # random = {'stg': stg + _random,
     #           'pro': pro + _random}
 
@@ -84,6 +89,25 @@ class Url:
     def api_register(self):
         return self.register[self.site]
 
+    # Not done
     def api_ext_login(self):
         return self.ext_login[self.site]
+
+    # Not done
+    def api_reset_password(self):
+        return self.reset_password[self.site]
+
+    # Not done
+    def api_pin(self):
+        return self.pin[self.site]
+
+    # Not done
+    def api_profile_settle(self):
+        return self.profile_settle[self.site]
+
+    def api_profile_info(self):
+        return self.profile_info[self.site]
+
+    def api_profile_requiredinfo(self):
+        return self.profile_requiredinfo[self.site]
 

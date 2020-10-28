@@ -1,102 +1,328 @@
-2020-10-26 14:10:01,488 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): ae-api.stgdevops.site:443
-2020-10-26 14:10:03,972 - urllib3.connectionpool - DEBUG - https://ae-api.stgdevops.site:443 "POST /ae-ecp/api/v1/register HTTP/1.1" 498 76
-2020-10-26 15:15:48,965 - root - INFO - username: welly
+2020-10-27 14:23:50,103 - base_api.base_players - INFO - username: welly
 status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzY5NjU0OCwKICAiZXhwIiA6IDE2MDM3MDczNDgsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.LyjSS5ZA7FikZmaSTU_fNJAehLwkBUY2-K4YsIJxchE', 'settle': True}
-2020-10-26 15:15:51,840 - root - INFO - username: welly1
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc3OTgzMSwKICAiZXhwIiA6IDE2MDM3OTA2MzEsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.OwjlInUqVrVc1JRbx0cG9_oTaPaHHP5_2euCfu-Upjs', 'settle': True}
+2020-10-27 14:23:53,063 - base_api.base_players - INFO - username: welly1
 status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzY5NjU1MSwKICAiZXhwIiA6IDE2MDM3MDczNTEsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.AmjDj3eZ3kfBxvUCANQDYNLOC1oXP8gQAO22kiEV1So', 'settle': True}
-2020-10-26 15:15:54,777 - root - INFO - username: welly2
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc3OTgzNCwKICAiZXhwIiA6IDE2MDM3OTA2MzQsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.XuG51ny1eEE3sJRmlfkhDSnpLc6Djl2mj_GMPSS-4Wo', 'settle': True}
+2020-10-27 14:23:56,023 - base_api.base_players - INFO - username: welly2
 status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzY5NjU1NCwKICAiZXhwIiA6IDE2MDM3MDczNTQsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTIiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.VAQOhk7bqX6OeL1e_lRvTr2JtTrg5858A7YwY2_8kjM', 'settle': True}
-2020-10-26 15:16:34,089 - base_api.base_players - INFO - username: welly
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc3OTgzNywKICAiZXhwIiA6IDE2MDM3OTA2MzcsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTIiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.5SvAS68x_4MLqX6L2y3Lp2vfoAiQ9CBckIUaogW0DDA', 'settle': True}
+2020-10-27 14:25:12,463 - base_api.base_players - INFO - username: welly
 status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzY5NjU5MywKICAiZXhwIiA6IDE2MDM3MDczOTMsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.nIJUKpKjn4feSqSdC2I86sW_mTpZJzu50vBQp0Ni2Nw', 'settle': True}
-2020-10-26 15:16:37,338 - base_api.base_players - INFO - username: welly1
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc3OTkxMywKICAiZXhwIiA6IDE2MDM3OTA3MTMsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.ZbHbTKw7ZEulRIRy9PKrvcbO8j5nGNWqSajzUtNkZu4', 'settle': True}
+2020-10-27 14:25:15,733 - base_api.base_players - INFO - username: welly1
 status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzY5NjU5NiwKICAiZXhwIiA6IDE2MDM3MDczOTYsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.mLtbz198kf6GQLFJU12IadX9CNX86xGRsuA_oa985gE', 'settle': True}
-2020-10-26 15:16:40,245 - base_api.base_players - INFO - username: welly2
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc3OTkxNiwKICAiZXhwIiA6IDE2MDM3OTA3MTYsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.sz7Yc_sg9YaXVJtEESKz4wLwOYFg3utjyuq8iSbiJUk', 'settle': True}
+2020-10-27 14:25:18,683 - base_api.base_players - INFO - username: welly2
 status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzY5NjYwMCwKICAiZXhwIiA6IDE2MDM3MDc0MDAsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTIiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.-XYij52BYA_C0EEhz3QO6t9rjKfcukD3pNvkcWdGdzM', 'settle': True}
-2020-10-26 17:00:23,965 - base_api.base_players - INFO - username: welly
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc3OTkxOSwKICAiZXhwIiA6IDE2MDM3OTA3MTksCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTIiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.xihudxWCvjF3obQBoLbRIFNSQIZy5mAe3j_rIms_UzE', 'settle': True}
+2020-10-27 14:32:07,553 - base_api.base_players - INFO - username: welly
 status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzcwMjgyMywKICAiZXhwIiA6IDE2MDM3MTM2MjMsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.lzzGiLqiwmHyGeSuQWl-WrI865f7l5qMbTWj9vszQYk', 'settle': True}
-2020-10-26 17:00:26,919 - base_api.base_players - INFO - username: welly1
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc4MDMyOCwKICAiZXhwIiA6IDE2MDM3OTExMjgsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.8mDwAACwtGN9--v9E3anvHGtzZ39IBQQwFOaoSGgjN0', 'settle': True}
+2020-10-27 14:32:10,580 - base_api.base_players - INFO - username: welly1
 status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzcwMjgyNiwKICAiZXhwIiA6IDE2MDM3MTM2MjYsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.KqAKRzdPJUqAigDj4vwqKTE_7Mmb2RMsKpML0PcGCzI', 'settle': True}
-2020-10-26 17:00:29,787 - base_api.base_players - INFO - username: welly2
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc4MDMzMSwKICAiZXhwIiA6IDE2MDM3OTExMzEsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.Va6ZaQWmeDDxF-fZ2fHHDPAH8IRbVu6lN9x7ZVeeAsk', 'settle': True}
+2020-10-27 14:32:13,512 - base_api.base_players - INFO - username: welly2
 status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzcwMjgyOSwKICAiZXhwIiA6IDE2MDM3MTM2MjksCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTIiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.pqfHufu3AIGBAXJl4bvUZ1jr_Or8L_x0iOkcmkvRMOU', 'settle': True}
-2020-10-26 17:01:35,042 - base_api.base_players - INFO - status code: 498
-response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-26 17:03:40,962 - base_api.base_players - INFO - status code: 498
-response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-26 17:04:04,822 - base_api.base_players - INFO - status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzcwMzA0NCwKICAiZXhwIiA6IDE2MDM3MTM4NDQsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTUiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.dF0hDXSIQChO4cDECaHUpc_FAAq6Bsng4VuFcmeIvXg', 'settle': True}
-2020-10-26 17:49:50,818 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-26 17:49:50,989 - base_api.base_players - INFO - status code: 498
-response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-26 17:49:54,087 - base_api.base_players - INFO - status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzcwNTc5MywKICAiZXhwIiA6IDE2MDM3MTY1OTMsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTYiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.ubD6EujCQOF9VoFtZMQH27MW5ppfa54Jv6H9X4B3874', 'settle': True}
-2020-10-26 18:16:05,785 - base_api.base_players - INFO - 
-num: 5
-mobile_num: 13131313136
-2020-10-26 18:16:06,147 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-26 18:16:06,393 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-26 18:16:06,544 - base_api.base_players - INFO - status code: 498
-response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-26 18:16:06,655 - base_api.base_players - INFO - status code: 498
-response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-26 18:16:09,980 - base_api.base_players - INFO - status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzcwNzM2OSwKICAiZXhwIiA6IDE2MDM3MTgxNjksCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTciLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.HGr0yGSqkl-SROSD7CII2UsBgCoyVNreTNDwlPLHZ18', 'settle': True}
-2020-10-26 18:16:09,980 - base_api.base_players - INFO - 
-num: 7
-mobile_num: 13131313138
-2020-10-26 18:22:52,951 - base_api.base_players - INFO - 
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc4MDMzNCwKICAiZXhwIiA6IDE2MDM3OTExMzQsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTIiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.6M7X9KG6vL2YT_1zGCab80OWyMDq3xDCuhLzQM6iIt0', 'settle': True}
+2020-10-27 14:32:28,926 - base_api.base_players - INFO - username: welly
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc4MDM1MCwKICAiZXhwIiA6IDE2MDM3OTExNTAsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.-g-RvKwCTb9SKcM8iyR7xskb1apKcqlW1jYWMSxCRkU', 'settle': True}
+2020-10-27 14:32:31,792 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc4MDM1MiwKICAiZXhwIiA6IDE2MDM3OTExNTIsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.tapZKlnR4PU6JCVbE-TnZZiP8iiV8e-WwviN4tdhU6Q', 'settle': True}
+2020-10-27 14:32:34,683 - base_api.base_players - INFO - username: welly2
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc4MDM1NSwKICAiZXhwIiA6IDE2MDM3OTExNTUsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTIiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.9cO9USWf7GwH7hEqGDA7dcEfBJYQdQEeee4sql24z5o', 'settle': True}
+2020-10-27 17:05:04,260 - base_api.base_players - INFO - 
 num: welly7
 mobile_num: 86 13131313138
-2020-10-26 18:22:53,217 - base_api.base_players - INFO - status code: 498
+2020-10-27 17:05:04,510 - base_api.base_players - INFO - status code: 498
 response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-26 18:22:53,327 - base_api.base_players - INFO - status code: 498
+2020-10-27 17:05:04,666 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:05:04,823 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:05:04,932 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:05:05,307 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:05:05,432 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:05:05,541 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:05:05,932 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:05:06,081 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:05:06,446 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:05:06,555 - base_api.base_players - INFO - status code: 498
 response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-26 18:22:56,621 - base_api.base_players - INFO - status code: 200
-response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzcwNzc3NiwKICAiZXhwIiA6IDE2MDM3MTg1NzYsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTgiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.rhSkV8lCS6KGR2Gf0n6iVaXofqblcONDT7TrD-xxV9w', 'settle': True}
-2020-10-26 18:22:56,621 - base_api.base_players - INFO - 
-num: welly8
-mobile_num: 86 13131313139
-2020-10-27 10:20:00,536 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-27 10:20:00,916 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-27 10:20:01,800 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-27 10:20:01,940 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-27 10:20:02,049 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-27 10:20:02,175 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-27 10:20:02,284 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-27 10:20:02,425 - base_api.base_players - INFO - status code: 498
-response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
-2020-10-27 10:20:02,534 - base_api.base_players - INFO - status code: 498
+2020-10-27 17:05:06,654 - base_api.base_players - INFO - status code: 498
 response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-27 10:21:39,257 - base_api.base_players - INFO - status code: 498
+2020-10-27 17:05:06,749 - base_api.base_players - INFO - status code: 498
 response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-27 10:43:43,897 - base_api.base_players - INFO - status code: 498
-response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-27 11:06:00,247 - base_api.base_players - INFO - status code: 498
-response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
-2020-10-27 11:20:42,178 - base_api.base_players - INFO - username: welly
+2020-10-27 17:05:09,842 - base_api.base_players - INFO - status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc4OTUxMCwKICAiZXhwIiA6IDE2MDM4MDAzMTAsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTE3IiwKICAiZW1haWwiIDogbnVsbCwKICAicm9sZSIgOiAiIiwKICAiZXh0cmEiIDogbnVsbCwKICAiaXNvcCIgOiBmYWxzZQp9.Axr8PSu2McEHjzEjsTddJuupVAkhyysX9VYVIzQYZFQ', 'settle': True}
+2020-10-27 17:05:09,842 - base_api.base_players - INFO - 
+num: welly17
+mobile_num: 86 13131313141
+2020-10-27 17:16:41,937 - base_api.base_players - INFO - username: welly
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc5MDIwMiwKICAiZXhwIiA6IDE2MDM4MDEwMDIsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.8W_FreJn9PAMmu5rbmigdm1KZWpNbMDJISsf43skus4', 'settle': True}
+2020-10-27 17:16:44,804 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc5MDIwNSwKICAiZXhwIiA6IDE2MDM4MDEwMDUsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.Gqw8r08A3kMQln-QOORXT9dVplgM70KgnaDKrxuO2z0', 'settle': True}
+2020-10-27 17:16:47,704 - base_api.base_players - INFO - username: welly2
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc5MDIwOCwKICAiZXhwIiA6IDE2MDM4MDEwMDgsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTIiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.kXVuaCnKP3AnxyEglUyg6eS09jeWc0va3-OwSWJvZnc', 'settle': True}
+2020-10-27 17:16:47,877 - base_api.base_players - INFO - username: welly
 status code: 498
 response: {'code': 2, 'msg': 'userid or password is incorrect', 'replace': None}
-2020-10-27 11:35:44,043 - base_api.base_players - INFO - status code: 200
-response: {'uuid': 'da4c77fe-c091-4aff-a110-4074ab75dbbb', 'image': 'data:image/jpeg;base64,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'}
-2020-10-27 11:35:44,167 - base_api.base_players - INFO - status code: 200
-response: {'uuid': 'c08ec754-147a-42f5-bda5-a3e20405eea0', 'image': 'data:image/jpeg;base64,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'}
-2020-10-27 11:42:30,937 - base_api.base_players - INFO - status code: 498
+2020-10-27 17:16:48,002 - base_api.base_players - INFO - username: 12345678901234
+status code: 498
+response: {'code': 2, 'msg': 'userid or password is incorrect', 'replace': None}
+2020-10-27 17:16:48,373 - base_api.base_players - INFO - username: 叫我第一名
+status code: 498
+response: {'code': 2, 'msg': 'userid or password is incorrect', 'replace': None}
+2020-10-27 17:16:48,716 - base_api.base_players - INFO - username: !@#!*@&^#*
+status code: 498
+response: {'code': 2, 'msg': 'userid or password is incorrect', 'replace': None}
+2020-10-27 17:16:49,131 - base_api.base_players - INFO - username: None
+status code: 498
+response: {'code': 0, 'msg': 'Invalid param: loginname is empty', 'replace': None}
+2020-10-27 17:16:49,232 - base_api.base_players - INFO - username: welly
+status code: 498
+response: {'code': 0, 'msg': 'Invalid param: loginpassword is empty', 'replace': None}
+2020-10-27 17:16:49,311 - base_api.base_players - INFO - username: None
+status code: 498
+response: {'code': 0, 'msg': 'Invalid param: loginname is empty', 'replace': None}
+2020-10-27 17:16:52,185 - base_api.base_players - INFO - username: welly
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc5MDIxMywKICAiZXhwIiA6IDE2MDM4MDEwMTMsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.FJLDye9kuyydAzc_SnuXtuL6nOSHtG7WVwqCuAOgx4w', 'settle': True}
+2020-10-27 17:16:52,435 - base_api.base_players - INFO - status code: 204
+2020-10-27 17:16:52,545 - base_api.base_players - INFO - status code: 200
+response: ['welly', 'welly1', 'welly10', 'welly11', 'welly12', 'welly13', 'welly14', 'welly15', 'welly16', 'welly17']
+2020-10-27 17:16:53,119 - base_api.base_players - INFO - status code: 200
+response: ['wade02']
+2020-10-27 17:16:53,216 - base_api.base_players - INFO - status code: 200
+response: ['lily0', 'lily1', 'lily2', 'lily3', 'lilya', 'lilya21', 'lilya5', 'lilya6', 'lilya7', 'lilya8']
+2020-10-27 17:16:53,309 - base_api.base_players - INFO - status code: 200
+response: []
+2020-10-27 17:16:53,403 - base_api.base_players - INFO - status code: 200
+response: []
+2020-10-27 17:16:53,481 - base_api.base_players - INFO - status code: 498
+response: {'code': 0, 'msg': 'Invalid param: q should not be smaller than 3', 'replace': None}
+2020-10-27 17:16:53,559 - base_api.base_players - INFO - status code: 498
+response: {'code': 0, 'msg': 'Invalid param: q should not be smaller than 3', 'replace': None}
+2020-10-27 17:16:56,382 - base_api.base_players - INFO - username: welly
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzc5MDIxNywKICAiZXhwIiA6IDE2MDM4MDEwMTcsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.I23ZsESuJmU8teJO3yblF8av_YpKDzjB_Oowe_54ang', 'settle': True}
+2020-10-27 17:16:57,184 - base_api.base_players - INFO - status code: 200
+response: {'uuid': '5a2cfbee-13a8-4e03-8c71-e7b27dbd579c', 'image': 'data:image/jpeg;base64,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'}
+2020-10-27 17:16:57,279 - base_api.base_players - INFO - status code: 200
+response: {'uuid': 'c1fbb454-817a-4d19-a30b-583a68ce4bc0', 'image': 'data:image/jpeg;base64,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'}
+2020-10-27 17:16:57,434 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-27 17:16:57,544 - base_api.base_players - INFO - status code: 498
 response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
+2020-10-28 16:07:27,743 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3MjQ0MywKICAiZXhwIiA6IDE2MDM4ODMyNDMsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.e0lYdRZpAap8Kx8spVkpc9XoApYahkAcGIBuFM0JKdE', 'settle': True}
+2020-10-28 16:08:24,322 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3MjUwMCwKICAiZXhwIiA6IDE2MDM4ODMzMDAsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.2n8VvUeCXdzr4_XsRddwdk3dCdtMe52wnQ5GvLfKBuo', 'settle': True}
+2020-10-28 16:08:24,462 - base_api.base_players - INFO - 405
+2020-10-28 16:09:09,334 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3MjU0NSwKICAiZXhwIiA6IDE2MDM4ODMzNDUsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.y3_gOV5CZgXy9329TxUF0qNe4AO3IhH8D3aCCe8wbPg', 'settle': True}
+2020-10-28 16:09:09,489 - base_api.base_players - INFO - 405
+2020-10-28 16:13:09,317 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3Mjc4NSwKICAiZXhwIiA6IDE2MDM4ODM1ODUsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.t2n1JWBtKZmMp-PukNVpOKEUuqFCsdyOizaWx8rYTQ4', 'settle': True}
+2020-10-28 16:13:09,442 - base_api.base_players - INFO - 405
+2020-10-28 16:16:26,077 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3Mjk4MiwKICAiZXhwIiA6IDE2MDM4ODM3ODIsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.ONhWaZkNCe6x_X6Bse18UG_CtqIatzUE_vow2HTNe5A', 'settle': True}
+2020-10-28 16:16:26,217 - base_api.base_players - INFO - 405
+2020-10-28 16:19:05,620 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3MzE0MSwKICAiZXhwIiA6IDE2MDM4ODM5NDEsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.Yz9-4YJf7xINNuFXqTxnk_N7TkXEheUB_AQOa0Mtjqs', 'settle': True}
+2020-10-28 16:19:05,719 - base_api.base_players - INFO - 405
+2020-10-28 16:23:02,597 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3MzM3OCwKICAiZXhwIiA6IDE2MDM4ODQxNzgsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.sExKtF5KQyAPMV2z3pXk6IN-kvOheHIrGGN3VS0V8JU', 'settle': True}
+2020-10-28 16:23:02,726 - base_api.base_players - INFO - 405
+2020-10-28 16:26:42,946 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3MzU5OCwKICAiZXhwIiA6IDE2MDM4ODQzOTgsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.338IsClvPadnWbCjVmOJnvvexnOCNoyTYlq4b_UaBtM', 'settle': True}
+2020-10-28 16:26:43,040 - base_api.base_players - INFO - 405
+2020-10-28 16:27:00,105 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3MzYxNSwKICAiZXhwIiA6IDE2MDM4ODQ0MTUsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.Q4fn5SWE2bIspLUbujUQodqlDLxsG_feWEFvk7qsGec', 'settle': True}
+2020-10-28 16:27:00,242 - base_api.base_players - INFO - 405
+2020-10-28 16:29:22,780 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-28 16:32:19,586 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-28 16:32:33,480 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3Mzk0OSwKICAiZXhwIiA6IDE2MDM4ODQ3NDksCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.9q6Ksop-PROawpZ-vPLABD50jej6N9FVfWyGuOBjRHM', 'settle': True}
+2020-10-28 16:32:33,577 - base_api.base_players - INFO - 405
+2020-10-28 16:33:23,410 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3Mzk5OSwKICAiZXhwIiA6IDE2MDM4ODQ3OTksCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.Wr56UF682gcy9nOgU-8YdgdVnwTz6ETUmVYbpU-nxe0', 'settle': True}
+2020-10-28 16:33:23,541 - base_api.base_players - INFO - 405
+2020-10-28 16:38:25,076 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NDMwMSwKICAiZXhwIiA6IDE2MDM4ODUxMDEsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.W8U0ht-sKoGz-OhVwcrOdZaGiZI9UPj_kPVAcqsT_cs', 'settle': True}
+2020-10-28 16:38:28,087 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NDMwNCwKICAiZXhwIiA6IDE2MDM4ODUxMDQsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.J82TEeiYn-F-vTrpNiRFXYw5ASpvRuEZTYfnn5MAzhk', 'settle': True}
+2020-10-28 16:38:28,338 - base_api.base_players - INFO - 405
+2020-10-28 16:45:53,874 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NDc0OSwKICAiZXhwIiA6IDE2MDM4ODU1NDksCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.GYjR88w3WNlcvgVWGuMQ1gIeQFztsT49GmYBgOJ4_1Y', 'settle': True}
+2020-10-28 16:45:56,769 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NDc1MiwKICAiZXhwIiA6IDE2MDM4ODU1NTIsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.vYTu7eQPGVlAn0ZdNmDuxi3Wq-wM45resQ0FUltYMzw', 'settle': True}
+2020-10-28 16:45:57,019 - base_api.base_players - INFO - 401
+2020-10-28 16:46:26,355 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NDc4MiwKICAiZXhwIiA6IDE2MDM4ODU1ODIsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.Zt2JXuCEhP6IEUnf-JgBKGvCvN04h_-XywvzuUhZJ2s', 'settle': True}
+2020-10-28 16:46:26,512 - base_api.base_players - INFO - 204
+2020-10-28 16:56:58,854 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NTQxNCwKICAiZXhwIiA6IDE2MDM4ODYyMTQsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.txpiAApNuiCw2bxF00Uyd5GoKWDbiYvPRTugLcVaveA', 'settle': True}
+2020-10-28 16:56:59,016 - base_api.base_players - INFO - 204
+2020-10-28 17:02:19,811 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NTczNSwKICAiZXhwIiA6IDE2MDM4ODY1MzUsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.7TH8mbAeORfQTv1LztEawPJh-PTZfkXgurkiIzcd9l0', 'settle': True}
+2020-10-28 17:02:19,983 - base_api.base_players - INFO - 498
+2020-10-28 17:06:08,165 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NTk2NCwKICAiZXhwIiA6IDE2MDM4ODY3NjQsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.wN5Btgqb8p1RaaYtPf1RQwO1flFl92EpxYf3tXvM9T8', 'settle': True}
+2020-10-28 17:06:08,319 - base_api.base_players - INFO - 498
+2020-10-28 17:09:06,025 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NjE0MiwKICAiZXhwIiA6IDE2MDM4ODY5NDIsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.Fy-C09qc4hAP5Prm-He4_lrkP6ceTVaHKoS4EhtlgGg', 'settle': True}
+2020-10-28 17:09:06,416 - base_api.base_players - INFO - 
+498 {'code': 0, 'msg': 'Invalid param: mobile is empty', 'replace': None}
+2020-10-28 17:10:34,094 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NjIzMCwKICAiZXhwIiA6IDE2MDM4ODcwMzAsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.vfULd0n8zg_I5nHzzxLwflt7EQ_FgXyjUemPEQVxzFY', 'settle': True}
+2020-10-28 17:14:36,792 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NjQ3MiwKICAiZXhwIiA6IDE2MDM4ODcyNzIsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.Sg0mmAvdFrvlEv8-Fb7vOlvFJt0kvB3Qw5ManFRxd1c', 'settle': True}
+2020-10-28 17:14:36,903 - base_api.base_players - INFO - 
+204
+2020-10-28 17:15:48,028 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NjU0NCwKICAiZXhwIiA6IDE2MDM4ODczNDQsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.RCOy8AZmh-bNuN3trxEy3TM4kGqjh-EIZhFgtAuoKYg', 'settle': True}
+2020-10-28 17:15:48,168 - base_api.base_players - INFO - 
+204
+2020-10-28 17:16:59,971 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NjYxNiwKICAiZXhwIiA6IDE2MDM4ODc0MTYsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.cojHoTvmilHpzhClTBnH4beFLlRJh5WZ_GssKA-qlrA', 'settle': True}
+2020-10-28 17:17:00,107 - base_api.base_players - INFO - 
+204
+2020-10-28 17:20:36,794 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NjgzMiwKICAiZXhwIiA6IDE2MDM4ODc2MzIsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.BP0-mXYoZLgfxwJtXqlOqt-nnjAzVW2uCwwNSlLtPs8', 'settle': True}
+2020-10-28 17:20:36,903 - base_api.base_players - INFO - 
+204
+2020-10-28 17:21:50,349 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NjkwNiwKICAiZXhwIiA6IDE2MDM4ODc3MDYsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.9tq63C8KTpIsE6GzrBqs9PLMYDH84_BBYmX8Cio5TEE', 'settle': True}
+2020-10-28 17:21:50,499 - base_api.base_players - INFO - 
+204
+2020-10-28 17:22:17,847 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NjkzMywKICAiZXhwIiA6IDE2MDM4ODc3MzMsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.CG6cXUosn-ID4dp5taT1pkYScMWikGqYSChJnbmXV9Q', 'settle': True}
+2020-10-28 17:22:18,001 - base_api.base_players - INFO - 
+204
+2020-10-28 17:23:07,746 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3Njk4MywKICAiZXhwIiA6IDE2MDM4ODc3ODMsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.g69ZOQB-j5Edscstd8or4SHBbBSY6n5XSq96beHbAZ8', 'settle': True}
+2020-10-28 17:23:07,918 - base_api.base_players - INFO - 
+204
+2020-10-28 17:24:13,135 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NzA0OSwKICAiZXhwIiA6IDE2MDM4ODc4NDksCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.T3wga4CuobBGgf-i-rcRHlKYGCaNEH8vZKszA93Hsb0', 'settle': True}
+2020-10-28 17:24:13,288 - base_api.base_players - INFO - 
+204
+2020-10-28 17:26:30,897 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3NzE4NywKICAiZXhwIiA6IDE2MDM4ODc5ODcsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.LP8UdBdbCfabLqk01gp5JVh6lMGk-W1nb0IkBd31gTw', 'settle': True}
+2020-10-28 17:26:31,044 - base_api.base_players - INFO - 
+204
+2020-10-28 17:59:30,403 - base_api.base_players - INFO - username: welly
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3OTE2NiwKICAiZXhwIiA6IDE2MDM4ODk5NjYsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.rnI-MH59wKjnGfEB5u2dsa1JOaNqOy-mKmHup7NuXEM', 'settle': True}
+2020-10-28 17:59:33,235 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3OTE2OSwKICAiZXhwIiA6IDE2MDM4ODk5NjksCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.9YOQIsC436O7MQt3qr3FpJ7uD1_o7T4z54yzl8YTM0w', 'settle': True}
+2020-10-28 17:59:36,230 - base_api.base_players - INFO - username: welly2
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3OTE3MiwKICAiZXhwIiA6IDE2MDM4ODk5NzIsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTIiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.rCxqd9jWzSilaMlB6BjycE6SZmSn95Y4dVb74rmAn5Y', 'settle': True}
+2020-10-28 17:59:36,393 - base_api.base_players - INFO - username: welly
+status code: 498
+response: {'code': 2, 'msg': 'userid or password is incorrect', 'replace': None}
+2020-10-28 17:59:36,493 - base_api.base_players - INFO - username: 12345678901234
+status code: 498
+response: {'code': 2, 'msg': 'userid or password is incorrect', 'replace': None}
+2020-10-28 17:59:36,624 - base_api.base_players - INFO - username: 叫我第一名
+status code: 498
+response: {'code': 2, 'msg': 'userid or password is incorrect', 'replace': None}
+2020-10-28 17:59:36,952 - base_api.base_players - INFO - username: !@#!*@&^#*
+status code: 498
+response: {'code': 2, 'msg': 'userid or password is incorrect', 'replace': None}
+2020-10-28 17:59:37,051 - base_api.base_players - INFO - username: None
+status code: 498
+response: {'code': 0, 'msg': 'Invalid param: loginname is empty', 'replace': None}
+2020-10-28 17:59:37,146 - base_api.base_players - INFO - username: welly
+status code: 498
+response: {'code': 0, 'msg': 'Invalid param: loginpassword is empty', 'replace': None}
+2020-10-28 17:59:37,264 - base_api.base_players - INFO - username: None
+status code: 498
+response: {'code': 0, 'msg': 'Invalid param: loginname is empty', 'replace': None}
+2020-10-28 17:59:40,074 - base_api.base_players - INFO - username: welly
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3OTE3NiwKICAiZXhwIiA6IDE2MDM4ODk5NzYsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.qsZASoK3S4DfY6TlxsrY6LkvmxkvhStfUKlkqZtMHOo', 'settle': True}
+2020-10-28 17:59:40,262 - base_api.base_players - INFO - status code: 204
+2020-10-28 17:59:40,371 - base_api.base_players - INFO - status code: 200
+response: ['welly', 'welly1', 'welly10', 'welly11', 'welly12', 'welly13', 'welly14', 'welly15', 'welly16', 'welly17']
+2020-10-28 17:59:40,465 - base_api.base_players - INFO - status code: 200
+response: ['wade02']
+2020-10-28 17:59:40,590 - base_api.base_players - INFO - status code: 200
+response: ['lily0', 'lily1', 'lily2', 'lily3', 'lilya', 'lilya21', 'lilya5', 'lilya6', 'lilya7', 'lilya8']
+2020-10-28 17:59:40,703 - base_api.base_players - INFO - status code: 200
+response: []
+2020-10-28 17:59:40,791 - base_api.base_players - INFO - status code: 200
+response: []
+2020-10-28 17:59:40,927 - base_api.base_players - INFO - status code: 498
+response: {'code': 0, 'msg': 'Invalid param: q should not be smaller than 3', 'replace': None}
+2020-10-28 17:59:41,012 - base_api.base_players - INFO - status code: 498
+response: {'code': 0, 'msg': 'Invalid param: q should not be smaller than 3', 'replace': None}
+2020-10-28 17:59:43,891 - base_api.base_players - INFO - username: welly
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3OTE4MCwKICAiZXhwIiA6IDE2MDM4ODk5ODAsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseSIsCiAgImVtYWlsIiA6IG51bGwsCiAgInJvbGUiIDogIiIsCiAgImV4dHJhIiA6IG51bGwsCiAgImlzb3AiIDogZmFsc2UKfQ.tRSwN7qC0sbDjQNgXKmHNNMkZ4rKVZgS3Rd54vIHFoU', 'settle': True}
+2020-10-28 17:59:44,157 - base_api.base_players - INFO - status code: 200
+response: {'uuid': 'bc5efa25-b506-4488-9f71-5852081ed0bd', 'image': 'data:image/jpeg;base64,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'}
+2020-10-28 17:59:44,251 - base_api.base_players - INFO - status code: 200
+response: {'uuid': '904acccc-cf0e-49f7-967e-a3dcc7c238af', 'image': 'data:image/jpeg;base64,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'}
+2020-10-28 17:59:44,376 - base_api.base_players - INFO - status code: 498
+response: {'code': 2, 'msg': 'The specified playerid has been registered', 'replace': None}
+2020-10-28 17:59:44,736 - base_api.base_players - INFO - status code: 498
+response: {'code': 4, 'msg': 'The specified mobile has been registered', 'replace': None}
+2020-10-28 17:59:47,614 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3OTE4MywKICAiZXhwIiA6IDE2MDM4ODk5ODMsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.5hUak7--BKNhoGQ44Nr6T2avNiQQW-dkmZcNsgAEzqM', 'settle': True}
+2020-10-28 17:59:47,724 - base_api.base_players - INFO - 
+204
+2020-10-28 17:59:50,570 - base_api.base_players - INFO - username: welly1
+status code: 200
+response: {'needactivation': False, 'verifytype': 'none', 'remaintime': -1, 'token': 'eyJhbGciOiJIUzI1NiJ9.ewogICJpYXQiIDogMTYwMzg3OTE4NiwKICAiZXhwIiA6IDE2MDM4ODk5ODYsCiAgInVzZXJuYW1lIiA6ICJ3ZWxseTEiLAogICJlbWFpbCIgOiBudWxsLAogICJyb2xlIiA6ICIiLAogICJleHRyYSIgOiBudWxsLAogICJpc29wIiA6IGZhbHNlCn0.Q0nW7J8OFUm9Jdzpu22ETRCPVWvK9xl0GKEE0vbXVzg', 'settle': True}
+2020-10-28 17:59:50,680 - base_api.base_players - INFO - 
+498 {'code': 0, 'msg': 'Invalid param: mobile is empty', 'replace': None}

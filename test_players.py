@@ -1,6 +1,5 @@
 import pytest
 from pprint import pprint
-import pytest_check as check
 import os
 import allure
 from base_api.base_players import Players, logger
@@ -11,6 +10,7 @@ import subprocess
 env = 'stg'
 right_status = 200
 wrong_status = 498
+put_status = 204
 
 
 def base_login_success(user='welly', status=right_status):
@@ -26,7 +26,7 @@ def base_login_success(user='welly', status=right_status):
     assert json['needactivation'] is False
     assert json['verifytype'] == 'none'
     assert json['remaintime'] == -1
-    assert '' not in json['token']
+    assert json['token'] is not None
     assert json['settle'] is True
 
 
@@ -108,7 +108,7 @@ def test_login_with_null_username_and_pwd(username=None, pwd=None, status=wrong_
 @allure.feature('Logout')
 @allure.story('Positive')
 @allure.step('')
-def test_logout_success(status=204):
+def test_logout_success(status=put_status):
     player = Players(env)
     status_code = player.logout()
 
@@ -136,17 +136,17 @@ def test_lookup_success(usernames=['welly', 'wade', 'lily'], status=right_status
 @allure.feature('Lookup')
 @allure.story('Minus')
 @allure.step('')
-def test_lookup_with_unknown_input(find_out_usernames=['asdz11ase', '!@#!@#!#@!@#', 'qw'], status=right_status):
+def test_lookup_with_unknown_input(find_out_usernames=['asdz11ase', '!@#!@#!#@!@#', 'qw', ''], status=right_status):
     players = Players(env)
 
     for username in find_out_usernames:
         status_code, json = players.lookup(username)
         if username == find_out_usernames[0] or username == find_out_usernames[1]:
-            check.equal(status_code, status)
+            assert status_code == status
             for j in json:
                 assert j is None
 
-        elif username == find_out_usernames[2]:
+        elif username == find_out_usernames[2] or username == find_out_usernames[3]:
             assert status_code == wrong_status
             assert json['code'] == 0
             assert json['msg'] == 'Invalid param: q should not be smaller than 3'
@@ -178,16 +178,16 @@ def test_profile_with_hardcode(username='welly'):
     assert json['im2'] is None
     assert json['tagnames'] is None
     assert json['affiliateid'] is None
-    assert json['createdate'] is 1602475428095
+    assert json['createdate'] == 1602475428095
     assert json['lastlogintime'] != 1603431826657
-    assert json['internalplayer'], False
-    assert json['withdrawid'], None
-    assert json['settle'], True
-    assert json['agentid'], None
-    assert json['pic1id'], None
-    assert json['pic2id'], None
-    assert json['pic1'], None
-    assert json['pic2'], None
+    assert json['internalplayer'] is False
+    assert json['withdrawid']is None
+    assert json['settle'] is True
+    assert json['agentid'] is None
+    assert json['pic1id'] is None
+    assert json['pic2id'] is None
+    assert json['pic1'] is None
+    assert json['pic2'] is None
     assert json['hasverifiedmobile'] is False
     displayname = json['displayname']
     assert displayname['en-US'] == '青銅_English'
@@ -220,7 +220,10 @@ def test_random_success(methods=['get', 'post']):
         assert json['image'] is not None
 
 
-# It's too much to assert, do it later
+@allure.feature('Register')
+@allure.story('Positive')
+@allure.step('')
+@pytest.mark.skip('Too much response to assert, do it later')
 def test_register_setting():
     player = Players(env)
     status_code, json = player.register_setting()
@@ -230,7 +233,10 @@ def test_register_setting():
             assert file == json
 
 
-# It's too much to assert, do it later
+@allure.feature('Bank card setting')
+@allure.story('Positive')
+@allure.step('')
+@pytest.mark.skip('Too much response to assert, do it later')
 def test_bank_card_setting():
     player = Players(env)
     status_code, json = player.bank_card_setting()
@@ -249,7 +255,10 @@ def test_bank_card_setting():
     print(deep)
 
 
-# Information is too less
+@allure.feature('Register')
+@allure.story('Positive')
+@allure.step('')
+@pytest.mark.skip('Information is so less, do it later')
 def test_register_isplayerinforready(username='welly1'):
     players = Players(env)
     userinfo = UserInfo(username)
@@ -264,6 +273,7 @@ def test_register_isplayerinforready(username='welly1'):
 @allure.feature('Register')
 @allure.story('Positive')
 @allure.step('')
+@pytest.mark.skip('Wait for the DB Authority')
 def test_register_success(user='welly', user_num=7, mobile_num=13131313138, status=right_status):
     players = Players(env)
 
@@ -322,11 +332,91 @@ def test_register_with_same_mobile_number(user='welly', user_num=1231, mobile_nu
     assert json['replace'] is None
 
 
+@allure.feature('Register')
+@allure.story('Minus')
+@allure.step('')
+@pytest.mark.skip('We do not have format judgment now')
+def test_register_with_wrong_format_mobile_number(user='welly', user_num=1231, mobile_num=13131, status=wrong_status):
+    players = Players(env)
+    status_code, json = players.register(user, user_num, mobile_num)
+
+    while json['msg'] == 'The specified playerid has been registered':
+        user_num += 1
+
+        if json['msg'] == 'The specified mobile has been registered':
+            break
+
+        status_code, json = players.register(user, user_num, mobile_num)
+
+    assert status_code == status
+    assert json['code'] == 4
+    assert json['msg'] == 'The specified mobile has been registered'
+    assert json['replace'] is None
+
+
+@allure.feature('Login')
+@allure.story('Positive')
+@allure.step('')
+@pytest.mark.skip('Not done and not found')
+def test_ext_login():
+    pass
+
+
+@allure.feature('Reset')
+@allure.story('Positive')
+@allure.step('')
+@pytest.mark.skip('Not done, options first , then put (payload need the encryption algorithm and args)')
+def test_reset_password():
+    pass
+
+
+@allure.feature('Reset')
+@allure.story('Positive')
+@allure.step('')
+@pytest.mark.skip('Not done, options first , then put (payload need the encryption algorithm and args) '
+                  'and reset the fundpwd')
+def test_pin():
+    pass
+
+
+@allure.feature('Profile')
+@allure.story('Positive')
+@allure.step('')
+@pytest.mark.skip('Not done and not found')
+def test_profile_settle():
+    pass
+
+
+@allure.feature('Profile')
+@allure.story('Positive')
+@allure.step('')
+def test_profile_info(edit_title='firstname', edit_input='qqww', status=put_status):
+    players = Players(env)
+    status_code = players.profile_info(edit_title, edit_input)
+
+    assert status_code == status
+
+
+@allure.feature('Profile')
+@allure.story('Minus')
+@allure.step('')
+def test_profile_info_with_invalid_mobile(edit_title='mobile', edit_input=2, mobile_input=132, status=wrong_status):
+    players = Players(env)
+    status_code, json = players.profile_info(edit_title, edit_input, mobile_input)
+
+    assert status_code == status
+    assert json['code'] == 0
+    assert json['msg'] == 'Invalid param: mobile is empty'
+    assert json['replace'] is None
+    # {'code': 0, 'msg': 'Invalid param: mobile is empty', 'replace': None}
+    # assert
+
+
 if __name__ == '__main__':
     # pytest.main(['-vs', 'test_players.py::test_register_success'])
 
-    # subprocess.call(['pytest', '-vs', 'test_players.py::test_register_with_same_mobile_number'])
-    #
+    # subprocess.call(['pytest', '-vs', 'test_players.py::test_profile_info'])
+
     os.system('del /q report')
-    # pytest.main(['-vs', '--alluredir', 'report'])
-    subprocess.call(['pytest', '-vs', 'test_players.py::test_register_with_same_mobile_number', '--alluredir', 'report'])
+    # subprocess.call(['pytest', '-vs', 'test_players.py::test_register_success', '--alluredir', 'report'])
+    subprocess.call(['pytest', '-vs', '--alluredir', 'report'])
